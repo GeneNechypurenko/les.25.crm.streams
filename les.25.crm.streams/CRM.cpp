@@ -3,11 +3,12 @@
 int CRM::size = 0;
 
 CRM::CRM()
-	:
-	name("name"),
-	position("position"),
-	salary(0)
-{}
+    :
+    salary(0)
+{
+    strcpy_s(name, " ");
+    strcpy_s(position, " ");
+}
 
 int CRM::getSize()
 {
